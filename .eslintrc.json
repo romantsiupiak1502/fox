@@ -1,3 +1,52 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "react-app", "prettier"],
+  "rules": {
+    "operator-linebreak": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "no-use-before-define": "off",
+    "object-curly-newline": "off",
+    "implicit-arrow-linebreak": "off",
+    "function-paren-newline": "off",
+    "indent": "off",
+    "react/jsx-indent-props": ["off"],
+    "react/jsx-indent": ["off"],
+    "comma-dangle": "off",
+    "no-plusplus": "off",
+    "max-len": "off",
+    "no-nested-ternary": "off",
+    "no-confusing-arrow": "off",
+    "arrow-body-style": "off",
+    "no-empty": "warn",
+    "quotes": ["off"],
+    "no-unused-vars": "off",
+    "no-shadow": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "consistent-return": "off",
+    "react/jsx-key": "error",
+    "react/jsx-curly-newline": "off",
+    "react-hooks/exhaustive-deps": ["off"],
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "jsx-a11y/label-has-associated-control": "warn",
+    "@typescript-eslint/explicit-function-return-type": "off", // Consider using explicit annotations for object literals and function return types even when they can be inferred.
+    "@typescript-eslint/explicit-module-boundary-types": "off", // Consider using explicit annotations for object literals and function return types even when they can be inferred.
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    // If argument name is "state" or "acc"
+    // then we will ignore this rule. Created for redux immer mutatings and Array.reduce
+    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state", "acc", "cache"] }],
+    "react/prop-types": ["off"],
+    "import/prefer-default-export": ["off"],
+    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
+    ],
+    "@typescript-eslint/ban-ts-comment": ["error"],
+    "react/button-has-type": ["error"],
+    "react/no-unescaped-entities": ["error"],
+    "react/no-array-index-key": ["error"],
+    "react/destructuring-assignment": ["error"]
+  }
 }
