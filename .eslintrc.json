@@ -1,6 +1,13 @@
 {
+  "globals": {
+    "JSX": true
+  },
+  "ignorePatterns": ["package.json", "package-lock.json", ".eslintrc.json"],
+  "parser": "@typescript-eslint/parser",
   "extends": ["next/core-web-vitals", "react-app", "prettier"],
+  "plugins": ["simple-import-sort", "prettier"],
   "rules": {
+    "prettier/prettier": "error",
     "operator-linebreak": "off",
     "import/extensions": "off",
     "import/no-unresolved": "off",
@@ -29,12 +36,10 @@
     "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "jsx-a11y/label-has-associated-control": "warn",
-    "@typescript-eslint/explicit-function-return-type": "off", // Consider using explicit annotations for object literals and function return types even when they can be inferred.
-    "@typescript-eslint/explicit-module-boundary-types": "off", // Consider using explicit annotations for object literals and function return types even when they can be inferred.
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/no-empty-function": "off",
-    // If argument name is "state" or "acc"
-    // then we will ignore this rule. Created for redux immer mutatings and Array.reduce
     "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state", "acc", "cache"] }],
     "react/prop-types": ["off"],
     "import/prefer-default-export": ["off"],
