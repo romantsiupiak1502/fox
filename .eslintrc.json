@@ -37,7 +37,7 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "jsx-a11y/label-has-associated-control": "warn",
     "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "error",
     "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/no-empty-function": "off",
     "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state", "acc", "cache"] }],
@@ -52,6 +52,9 @@
     "react/button-has-type": ["error"],
     "react/no-unescaped-entities": ["error"],
     "react/no-array-index-key": ["error"],
-    "react/destructuring-assignment": ["error"]
+    "react/destructuring-assignment": [
+      "error"
+    ],
+    "@typescript-eslint/no-explicit-any": "error"
   }
 }
