@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 
-const Home: NextPage = () => {
+const Home: NextPage = (): JSX.Element => {
   return <div className="text-3xl font-bold underline">Hello next js</div>;
 };
 
