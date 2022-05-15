@@ -63,10 +63,30 @@ const spacing = {
 };
 
 module.exports = {
-  content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/pages/**/*.{js, page.tsx,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     spacing,
     extend: {},
+    colors: {
+      white: '#FFFFFF',
+      blue: '#4540DB',
+      gray: {
+        background: '#E5E5E5',
+        light: '#9A9A9A',
+      },
+    },
+    fontFamily: {
+      body: ['Rubik', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial'],
+    },
+    fontSize: {
+      xs: '12px',
+      sm: '14px',
+      base: '16px',
+      xl: '20px',
+      '2xl': '32px',
+      '3xl': '34px',
+      '5xl': '48px',
+    },
   },
   plugins: [],
 };
