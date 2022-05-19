@@ -6,7 +6,7 @@ export default function Document(): JSX.Element {
       <Head />
       <meta charSet="UTF-8" />
       <meta name="description" content="fox" />
-      <body className="w-screen h-screen bg-gray-background flex justify-center">
+      <body className="w-screen h-screen bg-background flex justify-center">
         <Main />
         <NextScript />
       </body>
