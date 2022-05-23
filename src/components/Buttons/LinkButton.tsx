@@ -1,12 +1,13 @@
+import React from 'react';
 import Link from 'next/link';
 
 type LinkButtonProps = {
   path: string;
-  text: string;
+  children: React.ReactChild;
 };
 
-export const LinkButton = ({ path, text }: LinkButtonProps): JSX.Element => (
-  <Link href={path}>
-    <div className="text-base text-gray-light p-4">{text}</div>
+export const LinkButton = ({ path, children }: LinkButtonProps): JSX.Element => (
+  <Link href={path} passHref={true}>
+    <a>{children}</a>
   </Link>
 );
