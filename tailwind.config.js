@@ -66,7 +66,22 @@ module.exports = {
   content: ['./src/pages/**/*.{js, page.tsx,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     spacing,
-    extend: {},
+    extend: {
+      maxWidth: {
+        '4/6': '66.666667%',
+        26: '100px',
+        59: '232px',
+        74: '292px',
+        85: '340px',
+        118: '456px',
+        126: '504px',
+        140: '560px',
+        200: '700px',
+      },
+      gridTemplateColumns: {
+        10: 'repeat(10, minmax(200px, 232px))',
+      },
+    },
     colors: {
       white: '#FFFFFF',
       black: '#000000',
