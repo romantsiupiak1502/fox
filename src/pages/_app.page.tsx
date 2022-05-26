@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 
 import { NavBar, Footer } from 'components';
+import { Wrapper } from './__components';
 
 if (process.env['NEXT_PUBLIC_API_MOCKING'] === 'true') {
   require('mocks');
@@ -15,9 +16,11 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <NavBar />
-      <Component {...pageProps} />
-      <Footer />
+      <Wrapper>
+        <NavBar />
+        <Component {...pageProps} />
+        <Footer />
+      </Wrapper>
       <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
     </QueryClientProvider>
   );
