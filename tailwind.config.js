@@ -79,7 +79,7 @@ module.exports = {
         200: '700px',
       },
       gridTemplateColumns: {
-        10: 'repeat(10, minmax(200px, 232px))',
+        5: 'repeat(auto-fill, minmax(200px, 232px))',
       },
     },
     colors: {
