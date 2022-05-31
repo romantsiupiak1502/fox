@@ -78,6 +78,11 @@ module.exports = {
         140: '560px',
         200: '700px',
       },
+      minWidth: {
+        26: '100px',
+        59: '232px',
+        74: '292px',
+      },
       gridTemplateColumns: {
         5: 'repeat(auto-fill, minmax(200px, 232px))',
       },
@@ -87,6 +92,8 @@ module.exports = {
       black: '#000000',
       blue: '#4540DB',
       background: '#090A0B',
+      dark: '#133841',
+      yellow: '#B88C33',
       gray: {
         light: '#9A9A9A',
       },
